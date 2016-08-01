@@ -1,0 +1,20 @@
+<%include partials/header%>
+<h3>The Book details are as follows:</h3>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+    </tr>
+    <%posts.forEach(function(post){%>
+        <tr>
+            <td>
+                <%=post.title%>
+            </td>
+            <td>
+                <%=post.author%>
+            </td>
+        </tr>
+        <%})%>
+</table>
+
+<%include partials/footer%>
