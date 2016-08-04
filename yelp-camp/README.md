@@ -25,3 +25,24 @@ Each Campground has:
 #Style Navbar and Form
 *Add a navbar to all templates
 *Style the naw campgrounds form
+
+#Add Mongoose
+*install and configure mongoose
+*setup campground model
+*use campground model in the routes
+
+#Show Page
+*Review the restful routes
+*Add description to campground model
+*show db.collection.drop()
+*add a show route/template
+
+
+#Restful Routes
+
+name        url         verb        dec
+========================================
+INDEX       /dogs       GET         Display a list of all dogs
+NEW         /dogs/new   GET         Display a form to add a new dog
+CREATE      /dogs       POST        Add new dog to DB
+SHOW        /dogs/:id   GET         Shows info about one dog
