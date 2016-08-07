@@ -37,6 +37,34 @@ Each Campground has:
 *show db.collection.drop()
 *add a show route/template
 
+<<<<<<< HEAD
+#Refactor Mongoose Code
+*Create a models directory
+*User module.exports
+*Require everything correctly
+
+#Add Seed Files
+*Add a seed.js file
+*Run the seed file everytime the server starts
+
+#Add a comment model
+*Display comments on campground page
+
+#Comment New/Create
+*Discuss nested routes
+*Add new comment and create routes
+*Add the new comment form
+
+
+#Restful routes
+INDEX       /campgrounds
+NEW         /campgrounds/new
+CREATE      /campgrounds
+Show        /campgrounds/:id
+
+NEW         campgrounds/:id/comment/new            GET
+CREATE      campgrounds/:id/comment                               POST
+=======
 
 #Restful Routes
 
@@ -46,3 +74,4 @@ INDEX       /dogs       GET         Display a list of all dogs
 NEW         /dogs/new   GET         Display a form to add a new dog
 CREATE      /dogs       POST        Add new dog to DB
 SHOW        /dogs/:id   GET         Shows info about one dog
+>>>>>>> 0f9fec085c8d8ca1b6b7436b8c5009109aca1812
