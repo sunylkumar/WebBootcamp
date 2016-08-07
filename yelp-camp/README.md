@@ -75,3 +75,7 @@ NEW         /dogs/new   GET         Display a form to add a new dog
 CREATE      /dogs       POST        Add new dog to DB
 SHOW        /dogs/:id   GET         Shows info about one dog
 >>>>>>> 0f9fec085c8d8ca1b6b7436b8c5009109aca1812
+
+##Style the Show Page (v5)
+*Add sidebar to show page
+*Display comments nicely
