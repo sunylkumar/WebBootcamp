@@ -79,3 +79,19 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 ##Style the Show Page (v5)
 *Add sidebar to show page
 *Display comments nicely
+
+#Authentication(v6)
+
+##Intro to Auth
+*Tools used.
+    *Passport
+    *Passport Local
+    *Passport Local Mongoose
+*Implement Sessions
+    *Express-Session
+
+#Auth Part 1
+*Set up folder structure
+*install needed packages
+*Add root route and template
+*Add secret route and template
