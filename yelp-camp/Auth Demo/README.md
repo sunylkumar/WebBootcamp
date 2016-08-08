@@ -17,3 +17,15 @@
 #Auth Part 2
 *Create User model
 *configure Passport
+
+#Auth Part 3
+*Add Register routes
+*Add Register form
+
+#Auth part 4
+*Add Login routes
+*Add Login form
+
+#Auth Part 5
+*Add Logout route
+Add isLoggedIn middleware
