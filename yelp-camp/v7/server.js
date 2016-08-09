@@ -13,7 +13,7 @@ var indexRoutes = require('./routes/index');
 
 
 var PORT = 3000;
-mongoose.connect('mongodb://localhost/yelpcamp_v6');
+mongoose.connect('mongodb://localhost/yelpcamp_v8');
 
 var Campground = require('./models/campground');
 var User = require('./models/user');

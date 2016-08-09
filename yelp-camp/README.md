@@ -106,3 +106,11 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 
 ##Refactor ROUTES
 *Create route files for all the route groups
+
+##Users + Comments
+*Associate User + Comments
+*Save Authors name to a comment automatically
+
+##Users + Campgrounds
+*Associate User + Campgrounds
+*Save username+id to new campground
