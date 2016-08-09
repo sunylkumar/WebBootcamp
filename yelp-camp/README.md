@@ -82,16 +82,23 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 
 #Authentication(v6)
 
-##Intro to Auth
-*Tools used.
-    *Passport
-    *Passport Local
-    *Passport Local Mongoose
-*Implement Sessions
-    *Express-Session
+##Add User model
+*Install packages for Auth
+*Define User model
 
-#Auth Part 1
-*Set up folder structure
-*install needed packages
-*Add root route and template
-*Add secret route and template
+##Register
+*Configure Passport
+*Add Register routes
+*add Register templates
+
+##Login
+*Add login routes
+*Add login templates
+
+##Logout Route/Navbar
+*Add Logout route
+*Prevent user from adding a comment if not signed in
+*Add links to navbar
+*Show/hide auth links correctly
+
+##Show/Hide Links

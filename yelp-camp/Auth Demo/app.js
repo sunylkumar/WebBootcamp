@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 var LocalStrategy = require('passport-local');
 var passportLocalMongoose = require('passport-local-mongoose');
 var app = express();
-var bodyParser = require('body-parser');
 var PORT = 3000;
 
 mongoose.connect('mongodb://localhost/auth_demo_app');

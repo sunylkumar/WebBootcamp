@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    
+    <title>Yelp Camp</title>
+</head>
+
+<body>    
+    <nav class="navbar navbar-light bg-faded">
+        <div class=""> <a class="navbar-brand" href="/">YelpCamp</a>
+            <ul class="nav navbar-nav collapse navbar-toggleable-xs  pull-xs-right">
+                <%if(!currentUser){%>
+                    <li class="nav-item"> <a class="nav-link" href="/login">Login</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="/register">Sign Up</a> </li>
+                <%} else{%>
+                    <li class="nav-item"><a class="nav-link" href="#">Hi <%=currentUser.username%></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="/logout">Logout</a> </li>
+                <%}%>
+            </ul>
+        </div>
+    </nav>
