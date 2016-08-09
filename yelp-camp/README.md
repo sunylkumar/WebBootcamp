@@ -102,3 +102,7 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 *Show/hide auth links correctly
 
 ##Show/Hide Links
+*Show/hide auth links in navbar correctly
+
+##Refactor ROUTES
+*Create route files for all the route groups
