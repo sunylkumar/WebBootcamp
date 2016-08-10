@@ -20,16 +20,20 @@ router.get('/', function (req, res) {
 });
 
 // Campground Create Form Route
-router.get('/new', function (req, res) {
+router.get('/new', isLoggedIn, function (req, res) {
     res.render('campgrounds/new.ejs');
 })
 
 // Campground Create Logic Route
-router.post('/', function (req, res) {
+router.post('/',isLoggedIn, function (req, res) {
     var campName = req.body.name;
     var campImage = req.body.image;
     var campDescription = req.body.description;
-    var newCampground = { campName: campName, campImage: campImage, campDescription: campDescription };
+    var author = {
+        id: req.user._id,
+        username: req.user.username
+    }
+    var newCampground = { campName: campName, campImage: campImage, campDescription: campDescription, author: author };
 
     Campground.create(newCampground, function (err, campground) {
         if (err) {
@@ -56,6 +60,16 @@ router.get('/:id', function (req, res) {
         }
     })
 })
+
+// ===========================
+// Middleware for isLoggedIn
+// ===========================
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect('/login')
+}
 
 
 module.exports = router;
