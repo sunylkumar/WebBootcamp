@@ -1,0 +1,30 @@
+<%include ../partials/header%>
+    <div class="container">
+        <h2 class="text-xs-center">Edit <%=campground.campName%> Campground!</h2>
+        <br>
+        <div class=" offset-sm-4">
+            <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="post">
+                <div class="form-group row">
+                    <label for="campName" class="col-sm-2 col-form-label">Camp Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="campName" name="campground[campName]" value="<%=campground.campName%>"> </div>
+                </div>
+                <div class="form-group row">
+                    <label for="campImage" class="col-sm-2 col-form-label">Camp Image URL</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="campImage" name="campground[campImage]" value="<%=campground.campImage%>"> </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">Camp Description</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="campDescription" name="campground[campDescription]" value="<%=campground.campDescription%>"> </div>
+                </div>
+                <div class="form-group row "> <a class="btn btn-primary col-sm-2" href="/campgrounds">Cancel</a>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%include ../partials/footer%>

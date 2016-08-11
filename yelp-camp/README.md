@@ -114,3 +114,18 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 ##Users + Campgrounds
 *Associate User + Campgrounds
 *Save username+id to new campground
+
+##Editing Campgrounds
+*Add method-override
+*Add Edit route for campgrounds
+*Add Update Route
+*Fix $set problem
+
+##Deleting campgrounds
+*Add Destroy route
+Add Delete button
+
+
+##Authorization
+*User can only edit/delete his own campgrounds
+*Hide/show edit/delete buttons
