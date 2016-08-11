@@ -142,3 +142,6 @@ Add Delete button
 *User can only edit/delete his own Comments
 *Hide/show edit/delete buttons for comments
 *Refactor Middleware
+
+##Refactor Middleware 
+*Place all middlewares in seperate file
