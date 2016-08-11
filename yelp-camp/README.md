@@ -126,6 +126,19 @@ SHOW        /dogs/:id   GET         Shows info about one dog
 Add Delete button
 
 
-##Authorization
+##Authorization Campgrounds
 *User can only edit/delete his own campgrounds
 *Hide/show edit/delete buttons
+
+##Editing Comments
+*Add Edit route for campgrounds
+*Add Update Route
+*Fix $set problem
+
+##Deleting campgrounds
+*Add Destroy route
+
+##Authorization Comments
+*User can only edit/delete his own Comments
+*Hide/show edit/delete buttons for comments
+*Refactor Middleware
